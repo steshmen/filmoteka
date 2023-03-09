@@ -1,0 +1,91 @@
+.header-lib {
+    background-size: cover;
+    background-position: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.header-btn-box {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+.header-lib-btn {
+    background-color: transparent;
+    color: var(--primary-text-color);
+    display: block;
+    width: 130px;
+    height: 44px;
+    padding: 13px 36px;
+    border-radius: 5px;
+    border: 1px solid var(--primary-text-color);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.33;
+    text-transform: uppercase;
+    cursor: pointer;
+    &:first-child {
+        margin-right: 20px;
+    }
+    &:hover, &:focus {
+        background-color: var(--accent-text-color);
+        border: none;
+
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .header-lib {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.55),
+                rgba(0, 0, 0, 0.55)),
+                url('../images/header-lib-mob.jpg');
+        padding-bottom: 48px;
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .header-lib {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.55),
+                            rgba(0, 0, 0, 0.55)),
+                            url('../images/header-lib-mob@x2.jpg');
+        }
+    }
+    .header-logo__text {
+        display: none;
+    }
+}
+@media screen and (min-width: 768px) {
+    .header-lib {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.55),
+                        rgba(0, 0, 0, 0.55)),
+                        url('../images/header-lib-tab.jpg');
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .header-lib {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.55),
+                    rgba(0, 0, 0, 0.55)),
+                    url('../images/header-lib-tab@x2.jpg');
+        }
+    }
+}
+@media screen and (min-width: 1280px) {
+    .header-lib {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.55),
+                    rgba(0, 0, 0, 0.55)),
+                    url('../images/header-lib-desk.jpg');
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .header-lib {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.55),
+                    rgba(0, 0, 0, 0.55)),
+                    url('../images/header-lib-desk@x2.jpg');
+        }
+    }
+}
