@@ -11,6 +11,9 @@
     margin-bottom: 10px;
     cursor: pointer;
     object-fit: cover;
+    &:hover, &:focus {
+        transform: scale(1.01);
+    }
 }
 .film-list__title {
     font-weight: 500;
@@ -24,6 +27,10 @@
     font-size: 12px;
     line-height: 1.33;
     color: var(--accent-text-color);
+}
+
+.tui-is-selected {
+    background-color: var(--accent-text-color);
 }
 @media screen and (max-width: 767px) {
     .main {
@@ -78,34 +85,34 @@
 
 
 
-// .btn-list {
-//     display: flex;
-//     padding: 0;
-//     justify-content: center;
-//     list-style-type: none;
-// }
-// .btn-list__item {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     border: none;
-//     border-radius: 5px;
-//     width: 40px;
-//     height: 40px;
-//     background-color: transparent;
-//     color: var(--secondary-text-color);
-//     padding: 0;
-// }
-// .btn-list__item-active {
-//     background-color: var(--accent-text-color);
-//     color: var(--primary-text-color);
-// }
-// .btn-list__icon {
-//     fill: var(--secondary-text-color);
-// }
-// .btn_list__item-arrow {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     background-color: var(--footer-bg-color);
-// }
+.btn-list {
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    list-style-type: none;
+}
+.btn-list__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    color: var(--secondary-text-color);
+    padding: 0;
+}
+.btn-list__item-active {
+    background-color: var(--accent-text-color);
+    color: var(--primary-text-color);
+}
+.btn-list__icon {
+    fill: var(--secondary-text-color);
+}
+.btn_list__item-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--footer-bg-color);
+}

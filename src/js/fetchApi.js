@@ -1,6 +1,5 @@
 export { fetchApi, fetchGenre, fetchFilmById, fetchSearch, fetchFilmsCol };
 const API_KEY = '0d7d20afff25839c3a8a445daa632bca';
-const LONG_API_KEY = 'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIwZDdkMjBhZmZmMjU4MzljM2E4YTQ0NWRhYTYzMmJjYSIsInN1YiI6IjY0MDZmYTQ1Zjg1OTU4MDA3ODkzM2NhMyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.hxCRl1fW15ZCia2rCdoBS8QgTli027q61PhCYYu5rzg';
 const BASE_URL = 'https://api.themoviedb.org/3/';
 
 
@@ -17,7 +16,8 @@ async function fetchFilmById(id) {
 }
 
 async function fetchSearch(name, page = 1) {
-    const resp = await fetch(`${BASE_URL}search/movie?api_key=${API_KEY}&query=${name}&language=en-US`);
+    const resp = await fetch
+        (`${BASE_URL}search/movie?api_key=${API_KEY}&query=${name}&language=en-US&page=${page}`);
     const data = await resp.json();
     return data;
 } 

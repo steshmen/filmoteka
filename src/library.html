@@ -13,7 +13,7 @@
 <body>
     <header class="header-lib">
         <div class="container">
-            <div class="header-box">
+            <div class="header-box-lib">
                 <a href="./index.html" class="header-logo">
                     <svg width="26" height="26" class="header-logo__icon">
                         <use href="./images/sprite.svg#film-icon"></use>
@@ -33,14 +33,10 @@
             </div>
 
             <div class="header-btn-box">
-                <button class="header-lib-btn">Watched</button>
-                <button class="header-lib-btn">queue</button>
+                <button class="header-lib-btn js-watched-btn">Watched</button>
+                <button class="header-lib-btn js-queue-btn">queue</button>
             </div>
         </div>
-
-        
-
-
     </header>
 
     <main class="main">
@@ -67,7 +63,7 @@
     </main>
 
     <footer class="footer">
-        <p class="footer-text">&#169; 2020 | All Rights Reserved |</p>
+        <p class="footer-text">&#169; 2023 | All Rights Reserved |</p>
         <div class="footer-box">
             <p class="footer-content">Developed with</p>
             <svg class="footer-icon" width="14" height="14">
@@ -85,8 +81,11 @@
                 </svg>
             </button>
             <div class="modal-box"></div>
-            <button class="modal-btn modal-btn_left">remove to Watched</button>
-            <button class="modal-btn">remove to queue</button>
+                <div class="modal-btn-box">
+                    <button class="modal-btn" data-watched>remove from Watched</button>
+                    <button class="modal-btn" data-queue>remove from queue</button>
+                </div>
+            </div>
         </div>
     </div>
 
